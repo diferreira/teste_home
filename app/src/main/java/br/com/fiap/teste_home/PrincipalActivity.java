@@ -25,9 +25,11 @@ public class PrincipalActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
                 Intent intentForm = new Intent(PrincipalActivity.this, PrincipalActivity.class);
                 startActivity(intentForm);
+                closeOptionsMenu();
 
                 Intent intentFechar = new Intent(PrincipalActivity.this, PrincipalActivity.class);
                 startActivity(intentFechar);
+                closeOptionsMenu();
 
 
         return super.onOptionsItemSelected(item);
